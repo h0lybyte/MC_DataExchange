@@ -1,0 +1,53 @@
+/**
+ * Created by h0lybyte on 12/6/15.
+ */
+public class BatchTransaction {
+
+    public String Hash;
+    public Integer HashID;
+    public String TimeStamp;
+    public String HashStamp;
+    public String RawJson;
+    public boolean valid;
+    public HashMap<String, Package> Batch;
+
+
+    public BatchTransaction(String Hash, Integer HashID, String TimeStamp, String HashStamp, String RawJSON)
+    {
+        this.Hash = Hash;
+        this.HashID = HashID;
+        this.TimeStamp = TimeStamp;
+        this.HashStamp = HashStamp;
+        this.RawJson = RawJSON;
+        this.valid = VerifyHash(Hash, HashID, TimeStamp, HashStamp, RawJSON);
+        this.Batch = new HashMap<String, Package>();
+        // very
+
+
+    }
+
+    public boolean VerifyHash(String Hash, Integer HashID, String TimeStamp, String HashStamp, String RawJSON)
+    {
+        //
+        return true;
+    }
+
+    public boolean isValid()
+    {
+        return this.valid;
+    }
+
+
+    public String getRawJSON()
+    {
+        if(this.isValid())
+        {
+            return this.RawJson;
+
+        }
+    }
+
+
+    public String
+
+}
