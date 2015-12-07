@@ -1,0 +1,37 @@
+/**
+ * Created by h0lybyte on 12/6/15.
+ */
+public class Package {
+
+    public String username;
+    public Integer item;
+    public Integer itemAmount;
+
+
+    public Package(String username, Integer item, Integer itemAmount)
+    {
+        this.username = username;
+        this.item = item;
+        this.itemAmount = itemAmount;
+    }
+
+
+    public String getUsername()
+    {
+        return this.username;
+    }
+    public String getOwner()
+    {
+        return getUsername();
+    }
+
+    pulic Integer getItemID()
+    {
+        return this.item;
+    }
+
+    public Integer getItemQ()
+    {
+        return this.itemAmount;
+    }
+}
